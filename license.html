@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <title>LLM Acknowledgement &amp; License · Zachary Wayne</title>
+        <meta name="description" content="How Zachary Wayne's portfolio was made: use of LLM tools, permissions and license.">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="main" class="license-page rendered-doc">
+            <p><a href="index.html">← Back to projects</a></p>
+
+            <h1>LLM Acknowledgement &amp; License</h1>
+
+            <h2 id="llm">LLM Acknowledgement</h2>
+            <p><strong>No LLMs were used to create any work content</strong>, with the exception of ambiguous IDE line completion programs, or otherwise stated.</p>
+
+            <p>This site was started as a template I made without LLMs. Most CSS was written by <strong>Gemini</strong>. Refactoring, and major structuring by <strong>Claude</strong>, working from my direction and feedback.</p>
+            <p>Claude wrote the project overviews, working from my code's documentation, my existing READMEs or from scratch, which I reviewed for accuracy. It also wrote the scripts that recorded the animations from my unmodified programs.</p>
+            
+            <h2 id="license">License</h2>
+            <p>You're welcome to learn from, reuse and build on the code here, for school, hobby projects or anything else that isn't commercial. I only ask three things:</p>
+            <ol class="license-asks">
+                <li><strong>Credit me.</strong> Paste this comment into any sizeable piece of my code you use, with your name (if you modified it) and the date you copied the code on:
+                    <div class="attribution">
+                        <code id="attribution-text">modified by: &lt;name&gt;
+retrieved on: &lt;date&gt; from <span id="attribution-link">&lt;link&gt;</span>
+author: Zachary Wayne
+license: CC BY-NC-SA 4.0</code>
+                        <button type="button" id="attribution-copy" class="attribution-copy">Copy</button>
+                    </div>
+                </li>
+                <li><strong>Keep it non-commercial.</strong> Please don't sell it or use it in a paid product.</li>
+                <li><strong>Share alike.</strong> If you change it and share your version, share it under this same license.</li>
+            </ol>
+            <p>That's it. In legal terms, this is the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license, a standard Creative Commons license.</p>
+            <p class="license-exceptions">A few things here aren't mine to license, and keep their own terms: co-op work (shown with permission, not for reuse), collaborators' contributions, and third-party code such as the MIT-licensed fluid solver the Atmospheric Entry project builds on. This site uses Prism, marked and KaTeX (MIT).</p>
+
+            <details class="license-formal">
+                <summary>The legal wording</summary>
+                <p><strong>© 2026 Zachary Wayne. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></strong> (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International), except where noted above.</p>
+                <h3>You are free to:</h3>
+                <ul>
+                    <li><strong>Share</strong>: copy and redistribute the material in any medium or format.</li>
+                    <li><strong>Adapt</strong>: remix, transform, and build upon the material.</li>
+                </ul>
+                <p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
+                <h3>Under the following terms:</h3>
+                <ul>
+                    <li><strong>Attribution</strong>: you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+                    <li><strong>NonCommercial</strong>: you may not use the material for commercial purposes.</li>
+                    <li><strong>ShareAlike</strong>: if you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+                    <li><strong>No additional restrictions</strong>: you may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
+                </ul>
+                <p>This is a summary of, and not a substitute for, the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">full legal code</a>.</p>
+            </details>
+
+            <p><a href="index.html">← Back to projects</a></p>
+        </main>
+        <script>
+            // The attribution links back to wherever this site is hosted, so it stays right once published.
+            const attribution = document.getElementById('attribution-text');
+            const site = new URL('index.html', location.href);
+            if (/^https?:$/.test(site.protocol)) document.getElementById('attribution-link').textContent = site.origin + site.pathname.replace(/index\.html$/, '');
+            document.getElementById('attribution-copy').addEventListener('click', async (e) => {
+                try {
+                    await navigator.clipboard.writeText(attribution.textContent);
+                    e.target.textContent = 'Copied';
+                } catch {
+                    getSelection().selectAllChildren(attribution);
+                    e.target.textContent = 'Press Ctrl+C';
+                }
+                setTimeout(() => { e.target.textContent = 'Copy'; }, 1800);
+            });
+        </script>
+    </body>
+</html>

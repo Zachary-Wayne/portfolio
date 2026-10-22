@@ -1,0 +1,23 @@
+{
+    "name": "Procedural Terrain Raymarcher",
+    "description": "An endless, procedurally generated landscape rendered entirely in a fragment shader: layered noise terrain, water, sand, grass, rock and snow, with a mouse-controlled camera.",
+    "role": "Solo · Advanced Computer Graphics",
+    "highlights": [
+        "Raymarches a heightfield built from several weighted layers of smoothed value noise",
+        "Picks materials by height and noise: water with foam, beach, grass, soil, stone and snow",
+        "Mouse-look camera built from rotation matrices, with drifting cloud shadows"
+    ],
+    "tags": ["GLSL", "Shaders", "Procedural Generation"],
+    "labels": { "files": "Report" },
+    "course": {
+        "name": "Advanced Computer Graphics",
+        "professor": "Prof. Mark Green",
+        "url": "https://ontariotechu.ca/experts/fsci/mark-green.php"
+    },
+    "files": ["terrain.frag", "Report.md"],
+    "shader": {
+        "aspect": 1,
+        "mouseScale": 0.35
+    },
+    "media": []
+}

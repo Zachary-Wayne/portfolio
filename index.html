@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <title>Zachary Wayne · Software Projects</title>
+        <meta name="description" content="Projects by Zachary Wayne: machine-learning OCR, fluid simulation, games, graphics, and business automation.">
+        <meta property="og:title" content="Zachary Wayne · Software Projects">
+        <meta property="og:description" content="Machine-learning OCR, fluid simulation, mobile games, graphics, and business automation.">
+        <meta property="og:type" content="website">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-glsl.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-dart.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-powershell.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clojure.min.js" defer></script>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="documents.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to projects</a>
+        <nav class="site-nav" aria-label="Site">
+            <div class="site-nav-inner">
+                <a class="nav-brand" href="#">Zachary Wayne</a>
+                <div class="nav-sections">
+                    <a href="#" data-section="featured">Featured</a>
+                    <a href="#" data-section="all">All projects</a>
+                    <a href="#" data-section="notes">Course Notes</a>
+                </div>
+                <button id="nav-skills-toggle" class="nav-skills-toggle" type="button" aria-expanded="false" aria-controls="nav-skills-panel">Skills</button>
+                <div id="nav-selected-skills" class="nav-selected-skills" aria-label="Selected skills" hidden></div>
+                <div class="nav-search">
+                    <input id="search" type="search" placeholder="Search… (typos OK)" aria-label="Search projects" autocomplete="off" spellcheck="false">
+                    <kbd class="search-key" aria-hidden="true">/</kbd>
+                    <span id="search-status" class="search-status" aria-live="polite"></span>
+                    <div id="search-panel" class="search-panel" hidden>
+                        <p id="search-panel-summary" class="ed-summary" aria-live="polite"></p>
+                        <div id="search-panel-table" aria-hidden="true"></div>
+                        <p class="ed-footnote">
+                            Each cell is the fewest edits between two prefixes; the highlighted path is the cheapest route.
+                            <a id="search-panel-note" href="#note_edit_distance">How this search works →</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="nav-skills-panel" class="nav-skills-panel" role="region" aria-label="Skills" hidden>
+                    <div class="skill-groups"></div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="navbar">
+            <div class="navbar-brand">
+                <div class="hero-text">
+                <h1>Zachary Wayne</h1>
+                <p class="pitch">I create, deploy and maintain software<br>from requirement gathering to making games for fun<br>and this is my portfolio</p>
+                <p class="hero-note">This site is a showcase of my public projects and coursework. For more about me, including my work experience and education, see my <a href="https://www.linkedin.com/in/zachary-wayne-otu" target="_blank" rel="noopener">LinkedIn</a>.</p>
+                <nav class="profile-links" aria-label="Profile links">
+                    <a href="https://github.com/Zachary-Wayne" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
+                    <a href="https://www.linkedin.com/in/zachary-wayne-otu" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="currentColor"/><g fill="var(--btn-bg)"><circle cx="4.6" cy="4.6" r="1.3"/><rect x="3.5" y="6.6" width="2.2" height="6.2"/><path d="M7.2 6.6h2.1v.9c.4-.6 1.1-1.1 2.2-1.1 1.7 0 2.4 1.1 2.4 2.9v3.5h-2.2V9.6c0-.9-.3-1.4-1.1-1.4-.8 0-1.3.6-1.3 1.5v3.1H7.2z"/></g></svg><span>LinkedIn</span></a>
+                </nav>
+                </div>
+                <section class="hero-skills" aria-labelledby="skills-heading">
+                    <div class="hero-skills-head">
+                        <h2 id="skills-heading">Skills</h2>
+                        <span class="hero-skills-hint">click to filter</span>
+                    </div>
+                    <div id="tag-filters" class="skill-groups"></div>
+                    <p class="hero-skills-more"><strong>Also:</strong> Java, Lua, C#, SQL, Git/GitHub, Linux, JetBrains IDEs, Visual Studio, Scrum/Agile, ServiceNow</p>
+                </section>
+            </div>
+            <section id="featured" class="showcase" data-section="featured" aria-roledescription="carousel" aria-labelledby="showcase-heading">
+                <div class="showcase-head">
+                    <h2 id="showcase-heading">Featured</h2>
+                    <span class="showcase-count" aria-live="polite"></span>
+                </div>
+                <div class="showcase-stage">
+                    <button type="button" class="showcase-arrow" data-step="-1" aria-label="Previous featured project"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="showcase-track" tabindex="0" aria-label="Featured projects: swipe sideways or use the arrow keys">
+                        <p class="showcase-loading">Loading projects...</p>
+                    </div>
+                    <button type="button" class="showcase-arrow" data-step="1" aria-label="Next featured project"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </div>
+                <div class="showcase-dots" aria-label="Choose a featured project"></div>
+            </section>
+        </header>
+
+        <h2 id="list-heading" class="list-heading">All projects</h2>
+        <div id="toolbar" class="toolbar">
+            <div class="filter-row">
+                <button id="clear-filters" class="clear-filters" type="button" disabled>Clear filters ✕</button>
+                <div class="view-toggle" role="group" aria-label="Layout">
+                    <button type="button" data-view="cards" aria-pressed="true"><span aria-hidden="true">▦</span> <span class="view-label">Cards</span></button>
+                    <button type="button" data-view="list" aria-pressed="false"><span aria-hidden="true">☰</span> <span class="view-label">List</span></button>
+                </div>
+            </div>
+        </div>
+
+        <main id="main" class="main-content" tabindex="-1">
+            <section id="search-results" class="project-section" data-section="results" aria-labelledby="list-heading" hidden>
+                <div class="projects-grid"></div>
+            </section>
+            <section class="project-section" data-section="all" aria-labelledby="list-heading">
+                <div class="projects-grid"></div>
+            </section>
+            <section class="project-section" data-section="notes">
+                <h2>Course Notes</h2>
+                <p class="section-intro">My notes from my computer science courses, each covering one topic with code, tables or worked examples.</p>
+                <div class="projects-grid"></div>
+            </section>
+            <div id="no-results" class="no-results" hidden>
+                <p id="no-results-text"></p>
+                <button id="no-results-clear" class="clear-filters" type="button">Clear search and filters</button>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-contact">
+                <p>Want to know more about me, or get in touch? Find me on LinkedIn.</p>
+                <a class="contact-button" href="https://www.linkedin.com/in/zachary-wayne-otu" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3" fill="currentColor"/><g fill="var(--accent)"><circle cx="4.6" cy="4.6" r="1.3"/><rect x="3.5" y="6.6" width="2.2" height="6.2"/><path d="M7.2 6.6h2.1v.9c.4-.6 1.1-1.1 2.2-1.1 1.7 0 2.4 1.1 2.4 2.9v3.5h-2.2V9.6c0-.9-.3-1.4-1.1-1.4-.8 0-1.3.6-1.3 1.5v3.1H7.2z"/></g></svg><span>Contact me on LinkedIn</span></a>
+            </div>
+            <nav class="footer-links" aria-label="Site information">
+                <a href="license.html#llm">LLM Acknowledgement</a>
+                <a href="license.html#license">License (CC BY-NC-SA 4.0)</a>
+            </nav>
+            <p class="footer-copy">© 2026 Zachary Wayne</p>
+        </footer>
+
+        <div id="project-modal" class="modal-overlay">
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <div id="modal-corner" class="modal-corner"></div>
+                <button class="modal-close" aria-label="Close"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+                <div class="modal-scroll">
+                    <div class="modal-header">
+                        <h2 id="modal-title"></h2>
+                        <div id="modal-tags" class="tags-container"></div>
+                    </div>
+                    <div class="modal-meta">
+                        <span id="modal-role" class="modal-role"></span>
+                        <div id="modal-links" class="modal-links"></div>
+                    </div>
+                    <nav id="modal-toc" class="modal-toc" aria-label="Jump to section" hidden></nav>
+                    <div id="modal-description" class="modal-description-box" data-toc="Overview"></div>
+                    <div id="modal-body-container" class="modal-body"></div>
+                </div>
+                <div id="modal-scroll-hint" class="scroll-hint" hidden>
+                    <button class="scroll-hint-button" tabindex="-1">More below ↓</button>
+                </div>
+            </div>
+            <button type="button" class="modal-nav" data-step="-1" aria-label="Previous project"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="modal-nav-label" aria-hidden="true"></span></button>
+            <button type="button" class="modal-nav" data-step="1" aria-label="Next project"><span class="modal-nav-label" aria-hidden="true"></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+    </body>
+</html>

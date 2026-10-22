@@ -1,0 +1,35 @@
+{
+    "name": "Audio-Reactive Raymarched Music Video",
+    "description": "My Advanced Computer Graphics final project: a music video drawn live by a single GLSL shader as the song plays, driven by its beats and frequencies.",
+    "highlights": [
+        "Raymarched scenes built from signed distance functions, including a Menger Sponge fractal, a Mandelbrot zoom and fluid-style distortion",
+        "Synced to the music: an FFT of each audio chunk drives the frequency bars as it plays, and beats and onsets pre-analysed with Librosa trigger pulses and scene changes",
+        "Runs on OpenGLApp, my own Python creative-coding framework (shown as its own project)"
+    ],
+    "role": "Solo · Advanced Computer Graphics",
+    "section": "featured",
+    "tags": ["Python", "GLSL", "OpenGL", "Shaders", "Audio"],
+    "labels": { "media": "Music video", "files": "Report" },
+    "credits": [
+        {
+            "label": "Music",
+            "text": "Safri Duo – Played A Live (Viktor Newman Bootleg)",
+            "url": "https://soundcloud.com/djviktornewman/safri-duo-played-a-live-viktor-newman-bootleg-free-download",
+            "note": "free download from Viktor Newman on SoundCloud"
+        }
+    ],
+    "course": {
+        "name": "Advanced Computer Graphics",
+        "professor": "Prof. Mark Green",
+        "url": "https://ontariotechu.ca/experts/fsci/mark-green.php"
+    },
+    "files": ["Final Project Report.md"],
+    "showcase": "raymarcher_showcase.mp4",
+    "preview": "raymarcher_preview.gif",
+    "media": [
+        {
+            "src": "raymarcher_music_video.mp4",
+            "caption": "The music video, rendered from the shader frame by frame and synced to the song. Music: Safri Duo – Played A Live (Viktor Newman Bootleg), a free download on SoundCloud"
+        }
+    ]
+}

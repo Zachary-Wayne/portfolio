@@ -1,0 +1,37 @@
+{
+    "name": "TODNT: Handwritten Trade Sheets to CSV",
+    "description": "A desktop app that reads scanned, handwritten trade sheets and turns them into spreadsheets, using a fine-tuned handwriting-recognition transformer and a custom grid detector.",
+    "role": "Solo · Co-op work term",
+    "section": "featured",
+    "highlights": [
+        "One-click install for non-technical staff: a double-clicked script sets up Python and every dependency, no terminal needed",
+        "Fine-tuned Microsoft TrOCR through six model generations on a 4 GB GPU, using a built-in labelling app to collect training data",
+        "Coarse-to-fine grid detector that straightens scans and finds every cell, with median-consensus line fitting",
+        "Runs on any office PC, but uses a CUDA GPU automatically when there is one: converting, labelling and training all run many times faster on a GPU than on the CPU"
+    ],
+    "tags": ["Python", "PyTorch", "OpenCV", "Tkinter", "Machine Learning", "Computer Vision"],
+    "labels": { "media": "Demo & samples", "files": "README & source" },
+    "files": [
+        "README.md",
+        "grid_detector.py",
+        "ocr_resource_manager.py",
+        "pipelines.py",
+        "default_configs.py"
+    ],
+    "showcase": "todnt_showcase.mp4",
+    "preview": "todnt_preview.gif",
+    "media": [
+        {
+            "src": "todnt_walkthrough.mp4",
+            "caption": "The app running on synthetic sheets with the stock TrOCR base model, not the fine-tuned ones. Recorded on a CPU-only PC, so the OCR waits are sped up: with a CUDA GPU, every pipeline (converting, labelling and training) runs many times faster. All names, account codes and trades shown are fictitious. Broker and security names are real companies used only as realistic examples; no real orders, holdings or relationships are implied."
+        },
+        {
+            "src": "grid_detection.jpg",
+            "caption": "Grid detector output: the scan straightened, every cell found, handwriting cropped and blank cells marked (fictitious data)"
+        },
+        {
+            "src": "synthetic_scan.jpg",
+            "caption": "A synthetic trade sheet made for this demo with handwriting fonts. Every name, account code and trade on it is fictitious."
+        }
+    ]
+}

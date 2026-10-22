@@ -1,0 +1,19 @@
+{
+    "name": "Edit Distance & Levenshtein",
+    "description": "Two dynamic-programming edit-distance algorithms: unit-cost minimum edit distance and Levenshtein's variant, where a substitution costs 2. A JavaScript port of the first powers this site's search.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "O(mn) table: each cell is the cheapest of an insert, delete or substitution",
+        "Compares both cost models on word pairs like \"INTENTION\" → \"EXECUTION\"",
+        "Try it: search this page with a typo or two, using the bar at the top"
+    ],
+    "tags": ["Python", "Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": ["Edit Distance.md"],
+    "media": []
+}

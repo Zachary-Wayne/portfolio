@@ -1,0 +1,14 @@
+{
+    "name": "Python-to-Markdown API Docs Generator",
+    "description": "Walks a Python codebase and writes Markdown API documentation from its syntax trees: modules, classes, functions, type hints, defaults, docstrings, TODOs, and what each function calls.",
+    "role": "Solo · Co-op · part of TODNT",
+    "highlights": [
+        "Parses source with ast instead of importing it, so heavy or broken modules can still be documented",
+        "Reads config descriptions straight out of dataclass field metadata",
+        "Lists what every function calls or instantiates, and collects TODO and FIXME comments with line numbers via tokenize"
+    ],
+    "tags": ["Python", "Developer Tools", "CLI"],
+    "labels": { "files": "Example output & source" },
+    "files": ["example_output.md", "markdown_generator.py"],
+    "media": []
+}

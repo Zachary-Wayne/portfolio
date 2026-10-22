@@ -1,0 +1,20 @@
+{
+    "name": "Procedural Grid Game",
+    "description": "A turn-based tile game on an endless, chunk-generated Perlin-noise world, where enemies chase the player with A* pathfinding and dig through walls when that's the cheaper route.",
+    "role": "Solo · Side project",
+    "section": "featured",
+    "highlights": [
+        "Infinite world generated in 32×32 chunks from vectorised Perlin noise",
+        "A* over 8 directions where breaking a wall is just a costlier step, so diggers tunnel when it pays off",
+        "Actions take turns to complete, scaled by per-entity modifiers like \"slow moving\" or \"fast digging\""
+    ],
+    "tags": ["Python", "Tkinter", "NumPy", "Game Dev", "Procedural Generation"],
+    "labels": { "media": "Gameplay", "files": "Source code" },
+    "files": ["gridgame.py"],
+    "media": [
+        {
+            "src": "gridgame.gif",
+            "caption": "Recorded from the game: the player (cyan) tunnels east while enemies (red) path-find after it"
+        }
+    ]
+}

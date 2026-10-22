@@ -1,0 +1,20 @@
+{
+    "name": "Tkinter Live Inspector",
+    "description": "A browser-devtools-style inspector for Tkinter apps: hover any widget to outline it and see its class, path, size and styling, with colours and fonts mapped back to the app's design tokens.",
+    "role": "Solo · Co-op · part of TODNT",
+    "highlights": [
+        "Finds the deepest widget under the cursor by recursing into the smallest containing child",
+        "Click-through highlight overlay using a transparent-colour Toplevel, plus a floating HUD that stays on screen",
+        "Resolves ttk style lookups and maps raw hex colours and font tuples back to the app's named design tokens"
+    ],
+    "tags": ["Python", "Tkinter", "Developer Tools"],
+    "labels": { "media": "Demo", "files": "Source code" },
+    "files": ["tk_debugger.py"],
+    "preview": "inspector_preview.gif",
+    "media": [
+        {
+            "src": "inspector_demo.mp4",
+            "caption": "The inspector attached to a small Tk/ttk window with its own design tokens: hovering outlines each widget, and the HUD maps its colours and fonts back to the token names (pointer path scripted)"
+        }
+    ]
+}

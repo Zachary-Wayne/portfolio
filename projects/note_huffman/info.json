@@ -1,0 +1,19 @@
+{
+    "name": "Huffman Coding",
+    "description": "Notes on prefix-free variable-length codes, and an implementation that builds a Huffman tree and compresses a paragraph of text from 4,592 to 2,535 bits.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "Why frequent characters get shorter codewords, with a worked 100,000-character example",
+        "Greedy tree construction by repeatedly merging the two rarest nodes",
+        "Recursive code generation: left edge = 0, right edge = 1"
+    ],
+    "tags": ["Python", "Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": ["Huffman Code.md", "Huffman Implementation.md"],
+    "media": []
+}

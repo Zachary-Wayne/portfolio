@@ -1,0 +1,19 @@
+{
+    "name": "Clojure Notes",
+    "description": "A working tour of Clojure: regex, dynamic vs. lexical scope, conditionals, for comprehensions, loop/recur tail recursion, nested maps and threading macros.",
+    "role": "Programming Languages",
+    "section": "notes",
+    "highlights": [
+        "Why let can't rebind a dynamic var but binding can",
+        "Tail recursion: plain recursion vs. recur inside loop",
+        "Destructuring in for comprehensions with :when filters"
+    ],
+    "tags": ["Clojure", "Functional Programming"],
+    "course": {
+        "name": "Programming Languages",
+        "professor": "Prof. Ken Pu",
+        "url": "https://ontariotechu.ca/experts/fsci/ken-pu.php"
+    },
+    "files": ["Clojure Notes.md"],
+    "media": []
+}

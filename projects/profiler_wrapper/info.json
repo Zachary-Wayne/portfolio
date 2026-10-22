@@ -1,0 +1,27 @@
+{
+    "name": "Colour-Coded Decorator Profiler",
+    "description": "A custom wrapper decorator around cProfile that generates formatted, colour-coded terminal tables with call frequencies, execution time, and caller percentages.",
+    "highlights": [
+        "Labels every function by kind (public, private, dunder, generator…) and gives each class its own colour, so a profile can be scanned at a glance",
+        "Shows each function's most frequent caller and what share of its calls came from there",
+        "Colour gradients pick out the slowest times, and file:line links jump straight to the code"
+    ],
+    "tags": ["Python", "Developer Tools", "CLI"],
+    "labels": { "media": "Example output", "files": "Source code" },
+    "files": ["example.py", "profiler_wrapper.py"],
+    "media": [
+        {
+            "src": "image.png",
+            "caption": "Terminal output of example.py"
+        },
+        {
+            "src": "gridgame_profile.png",
+            "caption": "Profiling one turn of the Procedural Grid Game's game loop: rendering the visible tiles, and eight enemies path-finding with A* while the player digs"
+        }
+    ],
+    "preview": "gridgame_profile.gif",
+    "showcase": "gridgame_profile_showcase.mp4",
+    "mediaLayout": "grid",
+    "role": "Personal tool",
+    "section": "featured"
+}

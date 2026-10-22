@@ -1,0 +1,19 @@
+{
+    "name": "Graph Search & Shortest Paths",
+    "description": "Depth-first search with discovery and finish times, then single-source shortest paths with Dijkstra's algorithm and Bellman-Ford's negative-cycle check.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "Recursive DFS that colours vertices white, gray and black and records timestamps",
+        "Dijkstra: repeatedly settle the closest unsettled vertex and relax its edges",
+        "Bellman-Ford: relax every edge |V| − 1 times, then one more pass to detect negative cycles"
+    ],
+    "tags": ["Python", "Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": ["Depth-First Search.md", "Shortest Paths (Dijkstra and Bellman-Ford).md"],
+    "media": []
+}

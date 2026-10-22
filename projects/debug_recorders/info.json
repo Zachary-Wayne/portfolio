@@ -1,0 +1,24 @@
+{
+    "name": "Visual Debug Recorders",
+    "description": "Two small tools for seeing what an image-processing pipeline is doing: one tiles boolean masks into a grid frame by frame, the other captures colour frames, and both export animated GIFs.",
+    "role": "Solo · Co-op · part of TODNT",
+    "highlights": [
+        "Lays out masks of any shape into rows and columns with NumPy cumulative offsets",
+        "Pads frames of different sizes to a common canvas before exporting a GIF",
+        "Class-level API, so any step of a pipeline can log a mask or frame without passing a recorder around"
+    ],
+    "tags": ["Python", "NumPy", "Computer Vision", "Developer Tools"],
+    "labels": { "media": "Recordings", "files": "Source code" },
+    "files": ["debug_recorders.py"],
+    "preview": "grid_search_preview.gif",
+    "media": [
+        {
+            "src": "grid_search.gif",
+            "caption": "GridDebugger: TODNT's grid detector searching a synthetic sheet (fictitious data). A sample of the region search over angles and thresholds, then every line-search candidate, down to the grid it kept"
+        },
+        {
+            "src": "vertical_features.gif",
+            "caption": "MaskDebugger: the vertical-line features found in each row, one mask row per grid row and one frame per candidate. Lines that agree across rows become the columns"
+        }
+    ]
+}

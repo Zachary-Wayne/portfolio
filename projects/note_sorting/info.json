@@ -1,0 +1,25 @@
+{
+    "name": "Sorting Algorithms",
+    "description": "A complexity comparison of common sorting algorithms, plus implementations of insertion sort, quicksort (annotated with the cost of each line), counting sort, and radix sort built on it.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "Best, average and worst-case bounds side by side, and the Ω(n log n) limit for comparison sorts",
+        "Quicksort with a per-line cost breakdown of partitioning",
+        "Radix sort as repeated stable counting sorts, one decimal digit at a time"
+    ],
+    "tags": ["Python", "Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": [
+        "Sorting Algorithms Compared.md",
+        "Quick Sort.md",
+        "Insertion Sort.md",
+        "Counting Sort.md",
+        "Radix Sort.md"
+    ],
+    "media": []
+}

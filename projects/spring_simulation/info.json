@@ -1,0 +1,25 @@
+{
+    "name": "Coupled Spring Simulation",
+    "description": "Chains and branches of masses on springs, drawn in pygame with each spring coloured by how stretched (blue) or compressed (red) it is.",
+    "role": "Solo · Simulation and Modeling",
+    "section": "featured",
+    "highlights": [
+        "Each mass is integrated with SciPy's adaptive Runge–Kutta solver (DOP853)",
+        "Springs can hang from other masses, and child springs pull back on their parents",
+        "A slider sets the time step while it runs, including negative steps that run the simulation backwards"
+    ],
+    "tags": ["Python", "Physics Simulation"],
+    "labels": { "media": "Simulation", "files": "Source code" },
+    "course": {
+        "name": "Simulation and Modeling",
+        "professor": "Prof. Faisal Qureshi",
+        "url": "https://ontariotechu.ca/experts/fsci/faisal-qureshi.php"
+    },
+    "files": ["spring_simulation.py"],
+    "media": [
+        {
+            "src": "spring_simulation.gif",
+            "caption": "Recorded from the unmodified lab program"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# Everything that isn't part of the live site 
+/_dev/
+
+# Projects not listed in projects/index.json, so not shown on the site.
+/projects/dpi_scale/
+/projects/grovers_noise_analysis/

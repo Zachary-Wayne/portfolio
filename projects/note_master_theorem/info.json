@@ -1,0 +1,19 @@
+{
+    "name": "The Master Theorem",
+    "description": "How to read off the running time of divide-and-conquer recurrences of the form T(n) = aT(n/b) + f(n), with its three cases, a worked example, and where it doesn't apply.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "Compare f(n) against n^(log_b a) to pick one of three cases",
+        "Worked example: T(n) = 3T(n/2) + n² is Θ(n²)",
+        "Limitations: non-monotone T(n), non-constant a"
+    ],
+    "tags": ["Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": ["Master Theorem.md"],
+    "media": []
+}

@@ -1,0 +1,23 @@
+{
+    "name": "The Knapsack Problem, Three Ways",
+    "description": "The knapsack problem in theory, then solved two ways: an exact 0/1 dynamic-programming table (alongside longest common subsequence) and a greedy solution for the fractional version.",
+    "role": "Analysis & Design of Algorithms",
+    "section": "notes",
+    "highlights": [
+        "Brute force O(2ⁿ) vs. the Θ(nW) optimal-substructure formulation",
+        "0/1 knapsack and LCS as DP tables, with the filled tables printed",
+        "Fractional knapsack: greedy by value density, taking part of the last item"
+    ],
+    "tags": ["Python", "Algorithms"],
+    "course": {
+        "name": "Analysis and Design of Algorithms",
+        "professor": "Prof. Kourosh Davoudi",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/kourosh-davoudi.php"
+    },
+    "files": [
+        "Knapsack Problem.md",
+        "0-1 Knapsack and LCS (Dynamic Programming).md",
+        "Fractional Knapsack (Greedy).md"
+    ],
+    "media": []
+}

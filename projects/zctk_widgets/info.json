@@ -1,0 +1,20 @@
+{
+    "name": "ZCTk: CustomTkinter Widget Kit",
+    "description": "CustomTkinter extensions built for TODNT's GUI: a validating button, sliding toast notifications, labelled inputs and containers, an animation timer and a print() console.",
+    "role": "Solo · Co-op · part of TODNT",
+    "highlights": [
+        "Conditional button: each failed check outlines the section responsible in red, shakes the button, and lists every problem in one toast",
+        "Toast notifications slide in and stack, easing by elapsed time so animation speed doesn't depend on frame rate",
+        "Redirects print() into a text box, with carriage-return handling so progress lines update in place"
+    ],
+    "tags": ["Python", "Tkinter", "GUI"],
+    "labels": { "media": "Demo", "files": "Source code" },
+    "files": ["zctk.py", "demo.py", "app_style.py"],
+    "preview": "zctk_preview.gif",
+    "media": [
+        {
+            "src": "zctk_demo.mp4",
+            "caption": "demo.py: a failed submit outlines each field that needs fixing and lists every problem in one toast; once fixed, the render is queued"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Back-Office Automation Suite",
+    "description": "Independent PowerShell tools with native Windows GUIs that automate an investment firm's daily reporting: CSV repair, allocation sheets, PDF splitting, SFTP and email. Each runs on its own, and they can be linked together.",
+    "role": "Solo · Co-op work term",
+    "section": "featured",
+    "highlights": [
+        "TooKind: a GUI hub that syncs files with the firm's SFTP server and can launch the other tools, so staff never touch a terminal",
+        "Repairs malformed CSV exports where unescaped notes split rows and shift columns, then applies approval thresholds and negative-balance checks",
+        "Credentials are encrypted to each user's Windows account with DPAPI"
+    ],
+    "tags": ["PowerShell", "Windows Forms", "Automation", "GUI"],
+    "labels": { "media": "Demo", "files": "README & source" },
+    "files": ["README.md", "MMParser.ps1", "StatementSplitter.ps1"],
+    "showcase": "automation_showcase.mp4",
+    "preview": "automation_preview.gif",
+    "media": [
+        {
+            "src": "automation_walkthrough.mp4",
+            "caption": "The real scripts running on fictional data: TooKind downloads files from a simulated SFTP server, StatementSplitter splits a statement PDF, and MMParser repairs and formats a money-market report. All client names, addresses, account numbers, balances, files and server paths shown are fictitious, and no real firm's data is used."
+        }
+    ]
+}

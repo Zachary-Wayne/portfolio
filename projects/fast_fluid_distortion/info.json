@@ -1,0 +1,13 @@
+{
+    "name": "Fast Fluid Distortion Shader",
+    "description": "A GLSL shader that warps UV space with layered sine and cosine waves to fake fluid motion, cheaply enough to run behind other effects.",
+    "highlights": [
+        "Each pass adds a higher-frequency wave and feeds the next, so a few lines of maths give swirling, fluid-like motion",
+        "No textures, noise lookups or simulation state: just a handful of trig calls per pixel",
+        "Later became the fluid backgrounds in the Audio-Reactive Music Video and the OpenGLApp demo"
+    ],
+    "tags": ["GLSL", "Shaders"],
+    "files": ["fast_fluid_distortion.glsl"],
+    "media": [],
+    "role": "Personal experiment"
+}

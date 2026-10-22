@@ -1,0 +1,20 @@
+{
+    "name": "OpenGLApp: a Python Creative-Coding Framework",
+    "description": "A small framework over GLFW and PyOpenGL, modelled on Processing (the Java creative-coding sketchbook): subclass OpenGLApp, write setup() and update(), and windows, input, shaders and uniforms are handled for you. Used throughout Advanced Computer Graphics, up to the final project.",
+    "role": "Solo · Advanced Computer Graphics",
+    "highlights": [
+        "Vertex and fragment shaders live in one .glsl file, split on marker comments",
+        "Typed uniform setter backed by a table of glProgramUniform* calls, with readable errors when a value's type doesn't match",
+        "A misspelt uniform name gets a \"Did you mean…?\" suggestion, ranked by Levenshtein distance"
+    ],
+    "tags": ["Python", "GLSL", "OpenGL", "Shaders"],
+    "labels": { "media": "Demo", "files": "Source code" },
+    "files": ["demo.py", "shaders/demo.glsl", "src/opengl_app.py", "src/shader.py", "src/mappings.py", "src/utils.py", "src/model.py", "src/drawable.py"],
+    "preview": "opengl_preview.gif",
+    "media": [
+        {
+            "src": "opengl_demo.mp4",
+            "caption": "demo.py: rings follow the cursor (a scripted path here) over a distorted checkerboard, using helpers from the music video's shader"
+        }
+    ]
+}

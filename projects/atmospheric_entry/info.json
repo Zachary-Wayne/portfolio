@@ -1,0 +1,37 @@
+{
+    "name": "Simulating Atmospheric Entry",
+    "description": "A study in simulating atmospheric entry with a grid-based fluid solver, written up as a full report. The 3D C++ build stayed an early prototype; the 2D Python version shows the flow.",
+    "role": "Pair project · Simulation and Modeling",
+    "highlights": [
+        "Ported a 2D Eulerian fluid solver to C++ and extended it to 3D",
+        "Atmosphere model: air density at any altitude from gravity, temperature lapse rate and gas composition",
+        "Voxelizes any .obj mesh with ray casting, so the air can flow around the object's real shape"
+    ],
+    "tags": ["C++", "Python", "OpenGL", "Physics Simulation"],
+    "labels": { "media": "Screenshots", "files": "Report & source" },
+    "mediaLayout": "grid",
+    "course": {
+        "name": "Simulation and Modeling",
+        "professor": "Prof. Faisal Qureshi",
+        "url": "https://ontariotechu.ca/experts/fsci/faisal-qureshi.php"
+    },
+    "files": [
+        "README.md",
+        "Project Report.md",
+        "fluid_sim.cc",
+        "fluid_sim.h",
+        "atmosphere.cc",
+        "mesh2voxels.cc",
+        "FluidSim.py"
+    ],
+    "media": [
+        {
+            "src": "images/dog-solid-and-colors.png",
+            "caption": "C++ version: an .obj model inside the 3D pressure field"
+        },
+        {
+            "src": "images/simulation-later.png",
+            "caption": "The 2D Python prototype used to validate the solver"
+        }
+    ]
+}

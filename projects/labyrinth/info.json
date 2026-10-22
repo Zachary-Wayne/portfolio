@@ -1,0 +1,46 @@
+{
+    "name": "Labyrinth",
+    "description": "A marble maze game for Android, built in Flutter with Box2D physics by a team of five that I led. Levels are drawn in Inkscape and converted to physics geometry automatically.",
+    "role": "Team lead · Mobile Dev",
+    "highlights": [
+        "Led a five-person team: broke the project into tasks on a RACI chart (who is Responsible, Accountable, Consulted and Informed) and tracked each one to its deadline",
+        "Set up the app structure the team built on",
+        "Wrote svg2level.py, turning Inkscape drawings into JSON levels whose curved walls become exact Forge2D edge colliders"
+    ],
+    "links": [
+        {
+            "label": "GitHub",
+            "url": "https://github.com/DanielHinbest/Labyrinth"
+        }
+    ],
+    "tags": ["Dart", "Python", "Flutter", "Android Studio", "Mobile", "Game Dev"],
+    "labels": { "media": "Gameplay & planning", "files": "README & source" },
+    "course": {
+        "name": "Mobile Devices",
+        "professor": "Prof. Ali Neshati",
+        "url": "https://science.ontariotechu.ca/computer-science/people/undergraduate-faculty/ali-neshati.php"
+    },
+    "files": [
+        "README.md",
+        "svg2level.py",
+        "wall.dart",
+        "level.dart",
+        "maze.dart"
+    ],
+    "preview": "labyrinth_preview.gif",
+    "mediaLayout": "grid",
+    "media": [
+        {
+            "src": "labyrinth_walkthrough.mp4",
+            "caption": "The final release build running on an Android emulator: title screen, level select, then a full run of Level 1 (gameplay sped up 2×). \"Jolly Fox\" is the game's placeholder name for an offline player, not a real person"
+        },
+        {
+            "src": "level_1.svg",
+            "caption": "Level 1, drawn in Inkscape by Daniel Hinbest and converted by svg2level.py, rendered here from its .level file"
+        },
+        {
+            "src": "raci_chart.png",
+            "caption": "The RACI chart I used to assign and track the team's tasks"
+        }
+    ]
+}

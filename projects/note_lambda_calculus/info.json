@@ -1,0 +1,19 @@
+{
+    "name": "Lambda Calculus: Church Encodings",
+    "description": "Numbers, arithmetic, booleans and pairs built from nothing but functions, with each definition in short form and fully expanded.",
+    "role": "Programming Languages",
+    "section": "notes",
+    "highlights": [
+        "Church numerals: n is \"apply f to x, n times\"",
+        "Add, multiply and power defined in terms of each other",
+        "Booleans as selectors, so AND, OR, NOT and if/else are just function application"
+    ],
+    "tags": ["Functional Programming"],
+    "course": {
+        "name": "Programming Languages",
+        "professor": "Prof. Ken Pu",
+        "url": "https://ontariotechu.ca/experts/fsci/ken-pu.php"
+    },
+    "files": ["Lambda Calculus.md"],
+    "media": []
+}
